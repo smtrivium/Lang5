@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8" />
+    <title>Lang5</title>
+    <link href="css/default.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <div class="navbar">
+        <a href="#">Главная</a>
+        <a href="#">натройки</a>
+        <div class="dropdown">
+            <button class="dropbtn" onclick="myFunction()">
+                Граматика
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content" id="myDropdown">
+                <a href="#">Глаголы</a>
+                <a href="#">Существительные</a>
+                <a href="#">Прилагательные</a>
+                <a href="#">Предлоги</a>
+                <a href="#">Союзы</a>
+                <a href="#">Наречия</a>
+                <a href="#">Числительные</a>
+                <a href="#">Образование предложений</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn" onclick="myFunction()">
+                Тренажер слов
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content" id="myDropdown1">
+                <a href="#">Базовые глаголы</a>
+                <a href="#">Неправильные глаголы</a>
+                <a href="#">Существительные</a>
+            </div>
+        </div>
+    </div>
+    <div class="wraper">
+        <div class="player" >
+            <h2 class="title" id="ru_t"></h2>
+            <h2 class="translation" id="en_t"></h2>
+            <h2 class="translation" id="de_t"></h2>
+            <h2 class="translation" id="it_t"></h2>
+            <h2 class="translation" id="es_t"></h2>
+            <h2 class="translation" id="fr_t"></h2>
+            <audio class="audio"></audio>
+
+
+
+            <div class="progres_container">
+                <div class="progress"></div>
+            </div>
+            <!---->
+            <div class="buttons">
+                <div class="btn_prev"><img class="pic" src="./images/buttons/button-circle-previous.svg" alt="bnt"><img></div>
+                <div class="btn_play"><img class="pic" src="./images/buttons/button-circle-triangle-right.svg" alt="btn"><img></div>
+                <div class="btn_next"><img class="pic" src="./images/buttons/button-circle-next.svg" alt="btn"><img></div>
+            </div>
+
+            <div class="prokrutka">
+                <table class="output"></table>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/adj.js" type="text/javascript"></script>
+    <script src="js/main.js"></script>
+
+
+</body>
+</html>
